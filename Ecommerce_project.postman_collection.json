@@ -1,0 +1,860 @@
+{
+	"info": {
+		"_postman_id": "55aac32c-6f54-4175-b9d0-d6c306c130ec",
+		"name": "Ecommerce_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33763775"
+	},
+	"item": [
+		{
+			"name": "Get User By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/users/get/52"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/users/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/api/cart/get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/products/id/306"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products By Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/admin/products?category=dong-ho-nam",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"products"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "dong-ho-nam"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data Statistics",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/dataStatistics/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/api/allProducts"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Brands",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/admin/products/brand"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/categories/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All CartItems By User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/cart/items"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Dealhot",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/dealhot/get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Orders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/orders/get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Product Favourite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/products/favourite"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Address",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/users/address"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Checkout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/checkout/get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order Item By Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/orders/get/orderItems/2152"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products By Sold At",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/products/soldAt/mỹ"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products By Brands ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/productsByBrands?brands=Horbaach, Swanson",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"productsByBrands"
+					],
+					"query": [
+						{
+							"key": "brands",
+							"value": "Horbaach, Swanson"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/products/search/áo thun"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products By DealhotId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/dealhot/get/productBydealhotId/54"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Address By UserId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/users/address/52"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products By Brand Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/api/productsByBrandId/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"strictSSL": false,
+				"followRedirects": true,
+				"disableUrlEncoding": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\":\"thinh\" ,\r\n    \"phoneNumber\":\"123\",  \r\n    \"email\":\"thinh1@\", \r\n    \"password\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5455/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n\r\n    \"email\" : \"thinh1@\" , \r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5455/auth/signin"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Brand",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Horbaach\", \r\n    \"imageUrl\": \"https://cdn.shopify.com/s/files/1/0589/5336/7731/files/Capture.jpg?v=1635347224\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/api/brand/"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \r\n    \"topLavelCategory\": \"DoDienTuVaCongNghe\",\r\n    \"secondLavelCategory\": \"MayTinh-PhuKien\",\r\n    \"thirdLavelCategory\": \"MayTinh-MayTinhBang\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/api/categories/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imageUrl\": \"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MJ503?wid=890&hei=890&fmt=jpeg&qlt=95&.v=1621538312000\",\r\n    \"brand\": \"Apple\",\r\n    \"title\": \"Beats Studio Buds Tai nghe không dây đích thực khử tiếng ồn – Beats Đỏ\",\r\n     \"price\": 3499,\r\n    \"discountPersent\": 5,\r\n    \"soldAt\": \"Mỹ\"   , \r\n      \"colors\": [\r\n        {\r\n            \"name\": \"Trắng\",\r\n            \"quantity\": 200 ,\r\n          \"sizes\": [\r\n                 \r\n                    ]\r\n\r\n                    \r\n        },\r\n  {\r\n            \"name\": \"Đen\",\r\n            \"quantity\": 200 ,\r\n            \"sizes\": [\r\n                 \r\n                    ]\r\n         \r\n                    \r\n        },\r\n         {\r\n            \"name\": \"Đỏ\",\r\n            \"quantity\": 200 ,\r\n            \"sizes\": [\r\n                 \r\n                    ]\r\n         \r\n                    \r\n        }\r\n\r\n    ],\r\n\r\n    \"topLavelCategory\": \"do-dien-va-cong-nghe\",\r\n    \"secondLavelCategory\": \"tai-nghe\",\r\n    \"thirdLavelCategory\": \"tai-nghe-game\" , \r\n    \"favourite\": null,\r\n    \"favouriteStatus\": null , \r\n    \"screen\": \"\" , \r\n       \"operatingSystem\": \"\" , \r\n       \"chip\": \"\" , \r\n          \"ram\": \"\" , \r\n          \"storageCapacity\": \"\" , \r\n          \"connector\": \"\" , \r\n           \"frontCamera\": \"\" , \r\n           \"rearCamera\": \"\" , \r\n           \"rechargeableBatteries\": \"\" , \r\n           \"theFirm\": \"\" ,\r\n            \"description\": \"Lịch lãm trong mỗi tình huống để tự tin ngoại giao, thể hiện tiếng nói cá nhân mới là quý ông đích thực. Và một chiếc túi xách nam da thật đẹp sang trọng như ELLY HOMME – ETM25 sẽ là lựa chọn hoàn hảo cho trang phục mỗi ngày của quý ông!\"\r\n}\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/api/admin/products/"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\" : \"thinh\" , \r\n    \"city\" : \"cantho\" , \r\n    \"district\" : \"a\" ,\r\n    \"ward\" : \"a\" , \r\n    \"phoneNumber\" : \"1\" ,\r\n    \"streetAddress\" : \"a\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/api/orders/"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Dealhot",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"imageUrl\" : \"https://cdn-beup.woka.io/uploads/banners/2023/12/02/Fado.VN_1701480696.4525.jpg\" , \r\n  \"title\" : \"Thực Phẩm Chức Năng\" , \r\n  \"discountPercent\":\"50\" , \r\n  \"price\" : \"100\" \r\n    \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/api/dealhot/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\" : \"thinh2\", \r\n    \"phoneNumber\":\"123\"  , \r\n     \"dateOfBirthDateTime\": \"1990-05-25\" ,\r\n     \"gender\":  \"nam\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/api/users/update"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Cart Item To Checkout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/checkout?cartItemIds=352&cartItemIds=353&cartItemIds=354",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"checkout"
+					],
+					"query": [
+						{
+							"key": "cartItemIds",
+							"value": "352"
+						},
+						{
+							"key": "cartItemIds",
+							"value": "353"
+						},
+						{
+							"key": "cartItemIds",
+							"value": "354"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Address",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\" : \"thinh22\" , \r\n    \"streetAddress\" : \"asd111\" , \r\n    \"district\" : \"asd111\" , \r\n    \"city\" : \"asd11\" , \r\n    \"ward\" : \"asd1\" , \r\n    \"phoneNumber\" : \"123\" \r\n\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/api/users/address"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "{{BASE_URL}}/api/orders/"
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Product To Dealhot",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "{{BASE_URL}}/api/dealhot/remove/product/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product To Dealhot",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "{{BASE_URL}}/api/dealhot/add/product/4/54"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product To Favourite List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{BASE_URL}}/api/product/favourite/102"
+			},
+			"response": []
+		},
+		{
+			"name": "Add CartItem",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\" :\"1\" , \r\n     \"quantity\" :\"5\",\r\n    \"size\" : \"S\" , \r\n    \"color\" : \"white\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/api/cart/add"
+			},
+			"response": []
+		},
+		{
+			"name": "Update CartItem ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 102,\r\n        \"product\": {\r\n            \"id\": 52,\r\n            \"title\": \"Áo Thun Cổ Tròn Tay Dài Vải Cotton 2 Chiều T\",\r\n            \"description\": \"aaaaa\",\r\n            \"price\": 200.0,\r\n            \"discountedPrice\": 160.0,\r\n            \"discountPersent\": 20,\r\n            \"quantity\": 110,\r\n            \"brand\": {\r\n                \"id\": 1,\r\n                \"name\": \"yame\",\r\n                \"imageUrl\": \"https://cdn2.yame.vn/pimg/ao-thun-co-tron-toi-gian-m9-0020915/b8774425-6c8c-3100-0f9f-001947f4c602.jpg?w=540&h=756\",\r\n                \"products\": []\r\n            },\r\n            \"category\": {\r\n                \"id\": 3,\r\n                \"name\": \"MayTinh-MayTinhBang\",\r\n                \"level\": 3,\r\n                \"parentCategory\": {\r\n                    \"id\": 2,\r\n                    \"name\": \"MayTinh-PhuKien\",\r\n                    \"level\": 2,\r\n                    \"parentCategory\": {\r\n                        \"id\": 1,\r\n                        \"name\": \"DoDienTuVaCongNghe\",\r\n                        \"level\": 1,\r\n                        \"parentCategory\": null\r\n                    }\r\n                }\r\n            },\r\n            \"color\": null,\r\n            \"sizes\": [\r\n                {\r\n                    \"name\": \"M\",\r\n                    \"quantity\": 10\r\n                },\r\n                {\r\n                    \"name\": \"S\",\r\n                    \"quantity\": 123\r\n                }\r\n            ],\r\n            \"imageUrl\": \"https://cdn2.yame.vn/pimg/ao-thun-co-tron-toi-gian-m24-0021941/10511f3a-cdf5-7c01-3277-001a2d91d1da.jpg?w=540&h=756\",\r\n            \"reviews\": [],\r\n            \"ratings\": [],\r\n            \"numRatings\": 0,\r\n            \"createAt\": \"2024-05-27T15:35:21.652308\",\r\n            \"favourite\": null,\r\n            \"favouriteStatus\": \"false\",\r\n            \"totalAmountPurchased\": 0.0,\r\n            \"soldAt\": \"mỹ\"\r\n        },\r\n        \"size\": \"S\",\r\n        \"quantity\": 5,\r\n        \"totalPrice\": 800.0,\r\n        \"price\": 800.0,\r\n        \"userId\": 1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/api/cartItems/209"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Total Price Cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"url": "{{BASE_URL}}/api/cartItems/update/352"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Order Status ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"url": "{{BASE_URL}}/api/orders/orderStatus/952"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Dealhot",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "{{BASE_URL}}/api/dealhot/delete/102"
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Product To Favourite List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "{{BASE_URL}}/api/product/102"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "{{BASE_URL}}/api/admin/products/delete/152"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Brand",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{JWT 1}}"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "{{BASE_URL}}/api/admin/products/delete/brand/103"
+			},
+			"response": []
+		}
+	]
+}
